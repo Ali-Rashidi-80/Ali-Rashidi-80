@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" width="100%" height="200" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16"/>
+      <stop offset="50%" stop-color="#0b1324"/>
+      <stop offset="100%" stop-color="#090e1c"/>
+    </linearGradient>
+
+    <!-- Top Neon Accent -->
+    <linearGradient id="neonBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="45%" stop-color="#10b981"/>
+      <stop offset="80%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+
+    <!-- Text Accent Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <!-- Glowing Orb Gradients -->
+    <radialGradient id="cyanGlow" cx="90%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="emeraldGlow" cx="20%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#334155" stroke-width="0.7" stroke-opacity="0.25"/>
+      <circle cx="28" cy="28" r="1" fill="#38bdf8" fill-opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="880" height="200" rx="14" fill="url(#bgGradient)"/>
+  
+  <!-- Subtle Glowing Orbs -->
+  <rect width="880" height="200" rx="14" fill="url(#cyanGlow)"/>
+  <rect width="880" height="200" rx="14" fill="url(#emeraldGlow)"/>
+  
+  <!-- Subtle Technical Grid Overlay -->
+  <rect width="880" height="200" rx="14" fill="url(#techGrid)"/>
+
+  <!-- Card Border -->
+  <rect x="0.5" y="0.5" width="879" height="199" rx="13.5" fill="none" stroke="#1e293b" stroke-width="1.2"/>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="880" height="3.5" rx="2" fill="url(#neonBar)"/>
+
+  <!-- Status Chip -->
+  <g transform="translate(42, 28)">
+    <rect width="250" height="22" rx="11" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="12" cy="11" r="4" fill="#10b981"/>
+    <circle cx="12" cy="11" r="6" fill="#10b981" fill-opacity="0.25"/>
+    <text x="24" y="14.5" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Fira Code', monospace" font-size="10.5" font-weight="600" letter-spacing="0.5">ACTIVE SYSTEMS DEVELOPMENT</text>
+  </g>
+
+  <!-- Main Name Title -->
+  <g transform="translate(42, 88)">
+    <text fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Pro Display', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.6">Ali Rashidi</text>
+    <text x="180" y="-1" fill="url(#textGrad)" font-family="'Fira Code', monospace, Consolas" font-size="14" font-weight="600">/ sys-aiot-runtime</text>
+  </g>
+
+  <!-- Subtitle / Headline -->
+  <g transform="translate(42, 118)">
+    <text fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400">
+      Systems &amp; Compiler Engineer <tspan fill="#475569">|</tspan> Industrial Edge AIoT <tspan fill="#475569">|</tspan> Temporal Browser Agents &amp; MCP
+    </text>
+  </g>
+
+  <!-- Tech Capsules / Tags -->
+  <g transform="translate(42, 146)">
+    <!-- Tag 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="124" height="24" rx="6" fill="#032029" stroke="#0891b2" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="62" y="16" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Fira Code', monospace" font-size="11" font-weight="600" text-anchor="middle">Rust · Zig · LLVM</text>
+    </g>
+
+    <!-- Tag 2 -->
+    <g transform="translate(132, 0)">
+      <rect width="144" height="24" rx="6" fill="#04231b" stroke="#059669" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="72" y="16" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Fira Code', monospace" font-size="11" font-weight="600" text-anchor="middle">Model Context (MCP)</text>
+    </g>
+
+    <!-- Tag 3 -->
+    <g transform="translate(284, 0)">
+      <rect width="148" height="24" rx="6" fill="#141a33" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="74" y="16" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Fira Code', monospace" font-size="11" font-weight="600" text-anchor="middle">TinyML &amp; ESP32-S3</text>
+    </g>
+
+    <!-- Tag 4 -->
+    <g transform="translate(440, 0)">
+      <rect width="158" height="24" rx="6" fill="#1d152d" stroke="#9333ea" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="79" y="16" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Fira Code', monospace" font-size="11" font-weight="600" text-anchor="middle">Local-First DR Mirrors</text>
+    </g>
+  </g>
+
+  <!-- Right Decorative Architecture Graphics -->
+  <g transform="translate(680, 24)" opacity="0.85">
+    <!-- Outer Orbit Ring -->
+    <circle cx="95" cy="75" r="68" fill="none" stroke="#1e293b" stroke-width="1.2" stroke-dasharray="4 4"/>
+    <circle cx="95" cy="75" r="46" fill="none" stroke="#0e7490" stroke-width="1" stroke-opacity="0.4"/>
+    <circle cx="95" cy="75" r="26" fill="#082f49" fill-opacity="0.5" stroke="#06b6d4" stroke-width="1.5"/>
+
+    <!-- Central Core Node -->
+    <circle cx="95" cy="75" r="9" fill="#38bdf8"/>
+    <circle cx="95" cy="75" r="14" fill="#38bdf8" fill-opacity="0.25"/>
+
+    <!-- Satellite Nodes -->
+    <!-- Top-Right Node (Rust/Kernel) -->
+    <line x1="95" y1="75" x2="140" y2="40" stroke="#06b6d4" stroke-width="1.2" stroke-opacity="0.6"/>
+    <circle cx="140" cy="40" r="5" fill="#10b981"/>
+    <circle cx="140" cy="40" r="9" fill="#10b981" fill-opacity="0.25"/>
+
+    <!-- Bottom-Left Node (Edge/Firmware) -->
+    <line x1="95" y1="75" x2="48" y2="108" stroke="#3b82f6" stroke-width="1.2" stroke-opacity="0.6"/>
+    <circle cx="48" cy="108" r="5" fill="#6366f1"/>
+    <circle cx="48" cy="108" r="9" fill="#6366f1" fill-opacity="0.25"/>
+
+    <!-- Bottom-Right Node (Agent / TeleDOM) -->
+    <line x1="95" y1="75" x2="135" y2="120" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.6"/>
+    <circle cx="135" cy="120" r="4.5" fill="#34d399"/>
+    
+    <!-- Top-Left Node (LLVM IR) -->
+    <line x1="95" y1="75" x2="52" y2="42" stroke="#8b5cf6" stroke-width="1.2" stroke-opacity="0.5"/>
+    <circle cx="52" cy="42" r="4" fill="#a855f7"/>
+
+    <!-- Data Pulse Dots -->
+    <circle cx="118" cy="57" r="2" fill="#e0f2fe"/>
+    <circle cx="72" cy="92" r="2" fill="#dcfce7"/>
+    <circle cx="115" cy="98" r="1.8" fill="#f3e8ff"/>
+  </g>
+</svg>
